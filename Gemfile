@@ -38,3 +38,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use bunny to RabbitMQ
+gem "bunny", ">= 1.7.0"
