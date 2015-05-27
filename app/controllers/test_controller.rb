@@ -11,7 +11,7 @@ class TestController < ActionController::Base
 	conn.start
 
 	ch = conn.create_channel
-	q  = ch.queue("bunny.examples.hello_world", :auto_delete => true)
+	q  = ch.queue("bunny.examples.hello_world", :auto_delete => false)
 	x  = ch.default_exchange
 
 	q.subscribe do |delivery_info, metadata, payload|
